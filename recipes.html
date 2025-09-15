@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBites</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-100">
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="recipes.html">Our recipes</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="about.html">About us</a>
+          </li>
+        </ul>
+            <button id="toggle-theme"><img src="images/night-mode.png"  height="30" width="30"></button>
+            <a class="contactLi" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<br><br><br><br>
+<br>
+<div class="searchdiv" style="margin-left:15px;height:42px;background-color:hsl(350, 100%, 95%); color:white;">
+<input type="text" placeholder="Search.." id="search">
+<img src="images/search (1).png" height="30" width="30" id="searchicon"></div><br>
+<div class="container1 recipes">
+  <div class="food">
+  <img src="images/cake.jpg" id="foodimg">
+  <h3>Chocolate cake</h3>
+   <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+  <div class="food">
+  <img src="images/pizza.jpg" id="foodimg">
+  <h3>Homemade pizza </h3>
+   <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+    <div class="food">
+  <img src="images/burrito.jpg" id="foodimg">
+  <h3>Chicken avocado burrito </h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+      <div class="food">
+  <img src="images/steak.jpg" id="foodimg">
+  <h3>Pan fried steak</h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+  <div class="food">
+  <img src="images/pasta.jpg" id="foodimg">
+  <h3>Cheesy Pasta</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+    <div class="food">
+  <img src="images/sushi.jpg" id="foodimg">
+  <h3>California Sushi</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+    <div class="food">
+  <img src="images/salmon.jpg" id="foodimg">
+  <h3>Roasted Salmon</h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+      <div class="food">
+  <img src="images/rizotto.jpg" id="foodimg">
+  <h3>Rizotto</h3>
+     <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+      <div class="food">
+  <img src="images/shrimps.jpg" id="foodimg">
+  <h3>Garlic Butter Shrimps</h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+  <div class="food">
+  <img src="images/trout.jpg" id="foodimg">
+  <h3>Baked Rainbow Trout</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+  <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+    <div class="food">
+  <img src="images/noodles.jpg" id="foodimg">
+  <h3>Ramen Noodles</h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+      <div class="food">
+  <img src="images/cheesecake.jpg" id="foodimg">
+  <h3>Strawberry Cheesecake</h3>
+    <div class="specifics">
+    <img src="images/time.png" width="30" height="30" >
+    <span>5 minutes</span>
+ <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
+  <i class="fas fa-heart"></i>
+</button>
+   </div>
+      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
+  <button type="button" class="view">View recipe</button>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<hr>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>🍴 Tasty Bites</h2>
+      <p>Delicious recipes made simple.  
+      Explore, cook, and enjoy tasty moments with us.</p>
+    </div>
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3>Stay Updated</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook (2).png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tasty Bites. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>  
+</body>
+</html>
