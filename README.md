@@ -1,6 +1,5 @@
-# TastyBites
-A modern,user friendly and responsive recipe website
-# 🍴 Recipe Website
+
+# 🍴 Recipe Website-TastyBites
 
 A web application built with HTML, CSS, and JavaScript where users can explore recipes, search for dishes, mark favorites, and switch between light and dark mode.
 
