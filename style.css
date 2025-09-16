@@ -388,7 +388,6 @@ border:solid 1px black;
      top:247%;
     left:77%;
 }
-
 .close{
     position: absolute;
     top: 5px;
@@ -401,6 +400,65 @@ border:solid 1px black;
 .close:hover{
     transition:0.2s ease;
     transform:scale(1.08);
+}
+/* Contact section*/
+.whatsapp-button{
+     display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #2b8139, rgb(101, 182, 102));
+    border:solid 1px rgba(0,0,0,0.3);
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.2s ease;
+    color:white;
+}
+.whatsapp-button:hover{
+    transform:scale(1.04);
+}
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+.contact , .socials{
+    background-color: rgba(0, 0, 0, 0.07);
+    margin:auto;
+    padding:7px;
+    height:210px;
+    border:5px outset #145A32;
+    border-radius:25px;
+    font-family:"Times New Roman";
+    width:400px;
+    cursor:pointer;
+}
+.contact:hover , .socials :hover{
+    transform:scale(1.05);
+    transition: transform 0.3s ease;
+}
+.socials img{
+    height:40px;
+    width:40px;
+    margin-right:20px;
+}
+.contact_container{
+    border:3px solid #145A32;
+    background-color:#A8E6A3  ;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6),
+              -5px -5px 15px rgba(255, 255, 255, 0.2);
+    border-radius:30px;
+    margin:auto;
+    width:500px;
+    font-family:"Times New Roman";
+    font-size:20px;
+    padding:10px;
+}
+.contact_container input , textarea{
+    border-radius:6px;
+}
+.contact_container button{
+    border-radius:20px;
+    width:130px;
+    background-color: #145A32;
 }
 /*Footer section*/
 .footer {
