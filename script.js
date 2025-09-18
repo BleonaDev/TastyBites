@@ -1,3 +1,4 @@
+//Filter recipes as you type by checking each .food element to see if its text includes the typed word
 const search = document.getElementById("search");
   const foods = document.querySelectorAll(".food"); 
 
@@ -10,6 +11,7 @@ const search = document.getElementById("search");
     });
   });
 
+//Swiper slider-JavaScript library
   const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -43,6 +45,7 @@ const search = document.getElementById("search");
   },
 });
 
+//DOM manipulation with onclick() function
 const paragraph=document.getElementById("subscribeParagraph");
 const input=document.getElementById("subscribeInput");
 function subscribe(){
@@ -56,23 +59,31 @@ function subscribe(){
 }
 
 
-const darkmodeBtn = document.getElementById("toggle-theme");
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("toggle-theme");
+  if (!btn) return; // nëse nuk ka buton, mos bën asgjë
 
-document.body.classList.toggle("dark-mode", localStorage.getItem("theme") === "dark");
-darkmodeBtn.onclick = () => {
-  const isDark = document.body.classList.toggle("dark-mode");
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-};
-
-const btn = document.getElementById("toggle-theme");
-const img = btn.querySelector("img");
-btn.addEventListener("click", () => {
-  if (img.src.includes("night-mode.png")) {
-    img.src = "images/brightness.png";
-  } else {
-    img.src = "images/night-mode.png"; 
+  // Vendos dark mode sipas localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    btn.querySelector("img").src = "images/brightness.png";
   }
+
+  // Toggle dark mode në click
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    // Ndryshon imazhin e butonit
+    const img = btn.querySelector("img");
+    img.src = isDark ? "images/brightness.png" : "images/night-mode.png";
+  });
 });
+
+
+
+
 
 
 const addedButton = document.querySelector(".added-btn");
@@ -97,15 +108,6 @@ cards.forEach((card, index) => {
     card.classList.add("show");
   }, index * 200); 
 });
-
-
-function openModal(modalClass) {
-  document.querySelector("." + modalClass).style.display = "inline-block";
-}
-
-function closeModal(modalClass) {
-  document.querySelector("." + modalClass).style.display = "none";
-}
 
 
 

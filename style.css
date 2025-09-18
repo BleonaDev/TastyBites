@@ -55,7 +55,13 @@ body.dark-mode {
     transition:0.2s ease;
     transform:scale(1.05);
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .contactLi{
+      display: block !important;
+    margin-left:40px;
     background-color:hsl(78, 100%, 30%); 
     color:white;
     padding:10px 30px 10px 30px;
@@ -169,8 +175,7 @@ body.dark-mode {
 .container1 span:hover{
 color:hsl(0, 100%, 30%);
 }
-.view,
-.popular button {
+.view {
     margin:10px 33px;
     border:none;
     border-radius:30px;
@@ -179,9 +184,7 @@ color:hsl(0, 100%, 30%);
     padding:5px 27px;
     background-color:hsl(0, 0%, 0%);
     color:white;
-}
-.view{
-    margin-bottom:5px;
+       margin-bottom:5px;
 }
 .view:hover{
     background-color:hsl(78, 100%, 30%); 
@@ -300,9 +303,6 @@ color:hsl(0, 100%, 30%);
     margin-top:10px;
     margin-bottom:10px;
 }
-.popular button:hover{
-    background-color:hsl(78, 100%, 30%); 
-}
 .swiper-pagination-bullet-active {
     background-color: #000 !important;
     width: 9.5px !important; 
@@ -342,52 +342,6 @@ border:solid 1px black;
     text-align:center;
     font-weight:bolder;
 }
-.modal-box {
-    display:none;
-    position: absolute;
-    background-color: #fff;
-    border-radius:10px;
-    border:solid 4px hsl(0, 33%, 10%);
-    padding: 20px 15px;
-    border-radius: 10px;
-    width: 310px;
-    height: 420px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    overflow-y: auto;
-    max-height: 90%;
-}
-.modal-box.modal1{
-     top:153%;
-    left:0;
-}
-.modal-box.modal2{
-     top:153%;
-    left:25%;
-}
-.modal-box.modal3{
-     top:153%;
-    left:51%;
-}
-.modal-box.modal4{
-     top:153%;
-    left:77%;
-}
-.modal-box.modal5{
-     top:247%;
-    left:0;
-}
-.modal-box.modal6{
-     top:247%;
-    left:25%;
-}
-.modal-box.modal7{
-     top:247%;
-    left:51%;
-}
-.modal-box.modal8{
-     top:247%;
-    left:77%;
-}
 .close{
     position: absolute;
     top: 5px;
@@ -400,6 +354,18 @@ border:solid 1px black;
 .close:hover{
     transition:0.2s ease;
     transform:scale(1.08);
+}
+/*About us section */
+.about-us{
+    background-color: #e8f5e9; 
+max-width: 700px;
+ margin:auto;
+  font-size: 20px;
+   line-height: 1.6;
+   border:solid 5px rgb(18, 57, 10);
+   max-width:800px;
+   padding:80px;
+   border-radius:30px;
 }
 /* Contact section*/
 .whatsapp-button{
@@ -447,7 +413,7 @@ border:solid 1px black;
               -5px -5px 15px rgba(255, 255, 255, 0.2);
     border-radius:30px;
     margin:auto;
-    width:500px;
+    max-width:500px;
     font-family:"Times New Roman";
     font-size:20px;
     padding:10px;
@@ -550,5 +516,14 @@ border:solid 1px black;
     }
     .swiper-slide{
         margin-left:5px;
+    }
+    .about-us{
+        padding:20px;
+    }
+    .about-us p{
+        font-size:17px;
+    }
+    .pictures{
+        flex-direction:column;
     }
 }

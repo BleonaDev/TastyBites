@@ -44,309 +44,485 @@
 <input type="text" placeholder="Search.." id="search">
 <img src="images/search (1).png" height="30" width="30" id="searchicon"></div><br>
 <div class="container1 recipes">
-  <div class="food">
+ <div class="food">
   <img src="images/cake.jpg" id="foodimg">
-  <h3>Chocolate cake</h3>
-   <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal1')">View recipe</button>
+  <h3>Chocolate Cake</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>60 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-  <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#chocolateCakeModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/pizza.jpg" id="foodimg">
-  <h3>Homemade pizza </h3>
-   <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal2')">View recipe</button>
+  <h3>Homemade Pizza</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>2 hours</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-    <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#homemadePizzaModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/burrito.jpg" id="foodimg">
-  <h3>Chicken avocado burrito </h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal3')">View recipe</button>
+  <h3>Chicken Burrito</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>25 minutes</span>
+     <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-      <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#chickenBurritoModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/steak.jpg" id="foodimg">
-  <h3>Pan fried steak</h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal4')">View recipe</button>
+  <h3>Pan Fried Steak</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>20 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-  <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#panFriedSteakModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/pasta.jpg" id="foodimg">
   <h3>Cheesy Pasta</h3>
-  <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal5')">View recipe</button>
+  <div class="specifics" style="margin-bottom:-10px;">
+    <img src="images/time.png" width="30" height="30">
+    <span>15 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-    <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class=" view" data-bs-toggle="modal" data-bs-target="#cheesyPastaModal">View recipe</button> 
+  </div>
+  <div class="food">
   <img src="images/sushi.jpg" id="foodimg">
   <h3>California Sushi</h3>
   <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal6')">View recipe</button>
+    <img src="images/time.png" width="30" height="30">
+    <span>30 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-    <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#californiaSushiModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/salmon.jpg" id="foodimg">
   <h3>Roasted Salmon</h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal7')">View recipe</button>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>15 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-      <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#roastedSalmonModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/rizotto.jpg" id="foodimg">
   <h3>Rizotto</h3>
-     <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal8')">View recipe</button>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>25 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-      <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#risottoModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/shrimps.jpg" id="foodimg">
   <h3>Garlic Butter Shrimps</h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal9')">View recipe</button>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>15 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-  <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#garlicShrimpsModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/trout.jpg" id="foodimg">
   <h3>Baked Rainbow Trout</h3>
   <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
-  <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal10')">View recipe</button>
+    <img src="images/time.png" width="30" height="30">
+    <span>20 minutes</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-    <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#bakedTroutModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/noodles.jpg" id="foodimg">
-  <h3>Ramen Noodles</h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
+  <h3>Quick Ramen Noodles</h3>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
     <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal11')">View recipe</button>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
-      <div class="food">
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#ramenNoodlesModal">View recipe</button>
+</div>
+<div class="food">
   <img src="images/cheesecake.jpg" id="foodimg">
   <h3>Strawberry Cheesecake</h3>
-    <div class="specifics">
-    <img src="images/time.png" width="30" height="30" >
-    <span>5 minutes</span>
- <button class="fav-btn" onclick="toggle(this) " style="color: grey;"> 
-  <i class="fas fa-heart"></i>
-</button>
-   </div>
-      <img src="images/stars.png" width="110"  height="24" style="margin-left:54px;">
-  <button type="button" class="view" onclick="openModal('modal12')">View recipe</button>
+  <div class="specifics">
+    <img src="images/time.png" width="30" height="30">
+    <span>6 hours</span>
+    <button class="fav-btn" onclick="toggle(this)" style="color: grey;">
+      <i class="fas fa-heart"></i>
+    </button>
   </div>
+  <img src="images/stars.png" width="110" height="24" style="margin-left:54px;">
+  <button type="button" class="view" data-bs-toggle="modal" data-bs-target="#strawberryCheesecakeModal">View recipe</button>
+</div>
   </div>
 </div>
 <br><br>
 <section class="modals">
-  <div class="modal-box modal1">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <h2>Cheesy Pasta 🍝</h2>
-    <h3>Ingredients:</h3>
-    <ul>
-      <li>200g pasta</li>
-      <li>100g grated cheddar cheese</li>
-      <li>50ml heavy cream</li>
-      <li>2 cloves garlic, minced</li>
-      <li>1 tbsp butter</li>
-      <li>Salt & pepper to taste</li>
-    </ul> 
-    <h3>Instructions:</h3>
-    <p>Boil the pasta, then prepare a garlic-butter sauce with cream and melted cheese. Toss the pasta in the sauce until well coated, season with salt and pepper, and serve hot, garnished with parsley if desired.</p>
-    <p><b>Enjoy your creamy, cheesy pasta! 😋</b></p>
+  <div class="modal fade" id="chocolateCakeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Chocolate Cake 🎂</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+       <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>200g all-purpose flour</li>
+          <li>200g sugar</li>
+          <li>100g cocoa powder</li>
+          <li>2 eggs</li>
+          <li>100ml milk</li>
+          <li>100g butter (melted)</li>
+          <li>1 tsp baking powder</li>
+          <li>1 tsp vanilla extract</li>
+          <li>Pinch of salt</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Preheat oven to 180°C. Mix flour, cocoa, baking powder, and salt in one bowl. In another bowl, whisk eggs, sugar, milk, butter, and vanilla. Combine mixtures, pour into a greased pan, and bake for 30–35 minutes until cooked through.
+        </p>
+        <p><b>Enjoy your delicious chocolate cake! 😋</b></p>
+      </div>
+    </div>
   </div>
 </div>
-
-  <div class="modal-box modal2">
-  <span class="close" onclick="closeModal('modal2')">&times;</span>
-  <h2>California Sushi</h2>
-  <h3>Ingredients:</h3>
-  <ul>
-    <li>Sushi rice</li>
-    <li>Nori sheets</li>
-    <li>Crab sticks</li>
-    <li>Avocado slices</li>
-    <li>Cucumber strips</li>
-    <li>Soy sauce & wasabi</li>
-  </ul>
-  <h3>Instructions:</h3>
-  <p>Lay nori on a bamboo mat, spread sushi rice evenly, add crab, avocado, and cucumber, then roll tightly. Slice and serve with soy sauce and wasabi. 🍣</p>
-<p><b>Enjoy your California sushi! 🍣</b></p>
-</div>
-<div class="modal-box modal3">
-  <span class="close" onclick="closeModal('modal3')">&times;</span>
-  <h2>Roasted Salmon🍣</h2>
-  <h3>Ingredients:</h3>
-  <ul>
-    <li>2 salmon fillets</li>
-    <li>1 tbsp olive oil</li>
-    <li>Salt & pepper</li>
-    <li>1 lemon, sliced</li>
-    <li>Fresh herbs (thyme or dill)</li>
-  </ul>
-  <h3>Instructions:</h3>
-  <p>Preheat oven to 200°C. Place salmon on a baking tray, drizzle with olive oil, season with salt and pepper, and top with lemon slices and herbs. Roast for 12–15 minutes until cooked through.</p>
-  <p><b>Enjoy your hot roasted salmon! 😋</b></p>
-</div>
-<div class="modal-box modal4">
-  <span class="close" onclick="closeModal('modal4')">&times;</span>
-  <h2>Creamy Risotto 🍚</h2>
-  <h3>Ingredients:</h3>
-  <ul>
-    <li>1 cup Arborio rice</li>
-    <li>4 cups chicken or vegetable broth</li>
-    <li>1 small onion, finely chopped</li>
-    <li>2 tbsp butter</li>
-    <li>1/2 cup grated Parmesan</li>
-    <li>Salt & pepper to taste</li>
-  </ul>
-  <h3>Instructions:</h3>
-  <p>Sauté onion in butter until soft, add rice and toast for 1-2 minutes. Gradually add warm broth, stirring constantly, until rice is creamy and cooked. Stir in Parmesan, season, and serve hot.</p>
-  <p><b>Enjoy your creamy risotto! 😋</b></p>
-</div>
-<div class="modal-box modal5">
-  <span class="close" onclick="closeModal('modal5')">&times;</span>
-  <h2>Chocolate Cake 🎂</h2>
-  <h3>Ingredients:</h3>
-  <ul>
-    <li>200g all-purpose flour</li>
-    <li>200g sugar</li>
-    <li>100g cocoa powder</li>
-    <li>2 eggs</li>
-    <li>100ml milk</li>
-    <li>100g butter (melted)</li>
-    <li>1 tsp baking powder</li>
-    <li>1 tsp vanilla extract</li>
-    <li>Pinch of salt</li>
-  </ul>
-  <h3>Instructions:</h3>
-  <p>Preheat oven to 180°C. Mix flour, cocoa, baking powder, and salt in one bowl. In another bowl, whisk eggs, sugar, milk, butter, and vanilla. Combine mixtures, pour into a greased pan, and bake for 30–35 minutes until cooked through.</p>
-  <p><b>Enjoy your delicious chocolate cake! 😋</b></p>
-</div>
-<div class="modal-box modal6">
-  <span class="close" onclick="closeModal('modal6')">&times;</span>
-  <h2>Homemade Pizza 🍕</h2>
-  <h3>Ingredients:</h3>
-  <ul>
-    <li>250g all-purpose flour</li>
-    <li>150ml warm water</li>
-    <li>1 tsp dry yeast</li>
-    <li>1 tbsp olive oil</li>
-    <li>1/2 tsp salt</li>
-    <li>100g mozzarella cheese</li>
-    <li>100g tomato sauce</li>
-    <li>Fresh basil leaves</li>
-  </ul>
-  <h3>Instructions:</h3>
-  <p>Mix flour, yeast, salt, water, and olive oil to form a dough. Let rise for 1 hour. Roll out, spread tomato sauce, top with mozzarella and basil, then bake at 220°C for 12–15 minutes until golden and bubbly.</p>
-  <p><b>Enjoy your homemade pizza! 😋</b></p>
-</div>
-<div class="modal-box modal7">
-    <span class="close" onclick="closeModal('modal7')">&times;</span>
-    <h2>Chicken Avocado Burrito 🌯</h2>
-    <h3>Ingredients:</h3>
-    <ul>
-      <li>2 large tortillas</li>
-      <li>200g cooked chicken breast</li>
-      <li>1 ripe avocado</li>
-      <li>50g shredded cheese</li>
-      <li>½ cup cooked rice (optional)</li>
-      <li>½ cup black beans (optional)</li>
-      <li>1 tomato</li>
-      <li>2 tbsp sour cream or Greek yogurt</li>
-      <li>Fresh coriander (optional)</li>
-      <li>Salt & pepper</li>
-    </ul>
-    <h3>Instructions:</h3>
-    <p>Warm the tortillas. Slice the chicken and avocado. Layer chicken, avocado, beans, rice, tomato, cheese, and sour cream on each tortilla. Season with salt and pepper, add coriander if desired. Roll into a burrito, tucking the sides in. Serve warm!</p>
-  </div>
-<div class="modal-box modal8">
-    <span class="close" onclick="closeModal('modal8')">&times;</span>
-    <h2>Pan-Fried Steak 🥩</h2>
-    <h3>Ingredients:</h3>
-    <ul>
-      <li>2 beef steaks (sirloin or ribeye)</li>
-      <li>2 tbsp olive oil or butter</li>
-      <li>2 cloves garlic, crushed</li>
-      <li>Fresh rosemary or thyme (optional)</li>
-      <li>Salt & freshly ground black pepper</li>
-    </ul>
-    <h3>Instructions:</h3>
-    <p>Season steaks generously with salt and pepper. Heat oil or butter in a pan over high heat. Add garlic and herbs, then place steaks in the pan. Cook 2–4 minutes per side depending on doneness preference. Rest the steaks for 5 minutes before serving. Enjoy with your favorite sides!</p>
+<div class="modal fade" id="homemadePizzaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Homemade Pizza 🍕</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>250g all-purpose flour</li>
+          <li>150ml warm water</li>
+          <li>1 tsp dry yeast</li>
+          <li>1 tbsp olive oil</li>
+          <li>1/2 tsp salt</li>
+          <li>100g mozzarella cheese</li>
+          <li>100g tomato sauce</li>
+          <li>Fresh basil leaves</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Mix flour, yeast, salt, water, and olive oil to form a dough. Let rise for 1 hour. Roll out, spread tomato sauce, top with mozzarella and basil, then bake at 220°C for 12–15 minutes until golden and bubbly.
+        </p>
+        <p><b>Enjoy your homemade pizza! 😋</b></p>
+      </div>
+    </div>
   </div>
 </div>
+<div class="modal fade" id="chickenBurritoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Chicken Avocado Burrito 🌯</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 large tortillas</li>
+          <li>200g cooked chicken breast</li>
+          <li>1 ripe avocado</li>
+          <li>50g shredded cheese</li>
+          <li>½ cup cooked rice (optional)</li>
+          <li>½ cup black beans (optional)</li>
+          <li>1 tomato</li>
+          <li>2 tbsp sour cream or Greek yogurt</li>
+          <li>Fresh coriander (optional)</li>
+          <li>Salt & pepper</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Warm the tortillas. Slice the chicken and avocado. Layer chicken, avocado, beans, rice, tomato, cheese, and sour cream on each tortilla. Season with salt and pepper, add coriander if desired. Roll into a burrito, tucking the sides in. Serve warm!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="panFriedSteakModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h5 class="modal-title">Pan Fried Steak 🥩</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 beef steaks (sirloin or ribeye)</li>
+          <li>2 tbsp olive oil or butter</li>
+          <li>2 cloves garlic, crushed</li>
+          <li>Fresh rosemary or thyme (optional)</li>
+          <li>Salt & freshly ground black pepper</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Season steaks generously with salt and pepper. Heat oil or butter in a pan over high heat. Add garlic and herbs, then place steaks in the pan. Cook 2–4 minutes per side depending on doneness preference. Rest the steaks for 5 minutes before serving. Enjoy with your favorite sides!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cheesyPastaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cheesy Pasta 🍝</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>200g pasta</li>
+          <li>100g grated cheddar cheese</li>
+          <li>50ml heavy cream</li>
+          <li>2 cloves garlic, minced</li>
+          <li>1 tbsp butter</li>
+          <li>Salt & pepper to taste</li>
+        </ul>
+      <h6>Instructions:</h6>
+        <p>
+          Boil the pasta, then prepare a garlic-butter sauce with cream and melted cheese.
+          Toss the pasta in the sauce until well coated, season with salt and pepper, and serve hot,
+          garnished with parsley if desired.
+        </p>
+        <p><b>Enjoy your creamy, cheesy pasta! 😋</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="californiaSushiModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h5 class="modal-title">California Sushi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>Sushi rice</li>
+          <li>Nori sheets</li>
+          <li>Crab sticks</li>
+          <li>Avocado slices</li>
+          <li>Cucumber strips</li>
+          <li>Soy sauce & wasabi</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Lay nori on a bamboo mat, spread sushi rice evenly, add crab, avocado, and cucumber, then roll tightly.
+          Slice and serve with soy sauce and wasabi. 🍣
+        </p>
+        <p><b>Enjoy your California sushi! 🍣</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="roastedSalmonModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Roasted Salmon 🍣</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 salmon fillets</li>
+          <li>1 tbsp olive oil</li>
+          <li>Salt & pepper</li>
+          <li>1 lemon, sliced</li>
+          <li>Fresh herbs (thyme or dill)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Preheat oven to 200°C. Place salmon on a baking tray, drizzle with olive oil,
+          season with salt and pepper, and top with lemon slices and herbs. Roast for 12–15 minutes until cooked through.
+        </p>
+        <p><b>Enjoy your hot roasted salmon! 😋</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="risottoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Creamy Risotto 🍚</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup Arborio rice</li>
+          <li>4 cups chicken or vegetable broth</li>
+          <li>1 small onion, finely chopped</li>
+          <li>2 tbsp butter</li>
+          <li>1/2 cup grated Parmesan</li>
+          <li>Salt & pepper to taste</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Sauté onion in butter until soft, add rice and toast for 1-2 minutes. Gradually add warm broth, stirring constantly,
+          until rice is creamy and cooked. Stir in Parmesan, season, and serve hot.
+        </p>
+        <p><b>Enjoy your creamy risotto! 😋</b></p>
+      </div></div></div></div>
+<div class="modal fade" id="garlicShrimpsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h5 class="modal-title">Garlic Butter Shrimps 🍤</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>300g shrimps</li>
+          <li>2 tbsp butter</li>
+          <li>3 cloves garlic, minced</li>
+          <li>Salt & pepper</li>
+          <li>Fresh parsley, chopped</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Melt butter in a pan over medium heat. Add garlic and sauté until fragrant. Add shrimps, season with salt and pepper, cook until pink and cooked through. Garnish with parsley and serve immediately.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="bakedTroutModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h5 class="modal-title">Baked Rainbow Trout 🐟</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 rainbow trout fillets</li>
+          <li>1 tbsp olive oil</li>
+          <li>Salt & pepper</li>
+          <li>Lemon slices</li>
+          <li>Fresh herbs (thyme/dill)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Preheat oven to 200°C. Place trout on a baking tray, drizzle with olive oil, season with salt and pepper, top with lemon slices and herbs. Bake for 12-15 minutes until cooked through. Serve warm.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ramenNoodlesModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
-
-
+      <div class="modal-header">
+        <h5 class="modal-title">Ramen Noodles 🍜</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>200g ramen noodles</li>
+          <li>2 cups chicken or vegetable broth</li>
+          <li>1 boiled egg</li>
+          <li>Green onions, chopped</li>
+          <li>Soy sauce to taste</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Cook noodles according to package instructions. Heat broth and add noodles. Top with boiled egg, green onions, and drizzle with soy sauce. Serve hot.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="strawberryCheesecakeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Strawberry Cheesecake 🍰</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>200g cream cheese</li>
+          <li>50g sugar</li>
+          <li>1 egg</li>
+          <li>100g digestive biscuits, crushed</li>
+          <li>50g butter, melted</li>
+          <li>Strawberries for topping</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <p>
+          Mix crushed biscuits with melted butter, press into a pan for base. Whisk cream cheese, sugar, and egg until smooth, pour over base. Bake at 160°C for 25 minutes. Chill, top with strawberries, and serve.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
 <hr>
 <footer class="footer">
   <div class="footer-container">
