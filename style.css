@@ -480,7 +480,7 @@ max-width: 700px;
     }
  #foodimg {
     width: 200px;
-    max-width: 200px;
+    max-width: 100%;
     max-height: 250px;
     margin-left:100px;
     }
@@ -508,8 +508,11 @@ max-width: 700px;
     .viewAllBtn{
         margin-top:50px;
     }
+    .subscribe{
+        max-width:100%;
+    }
     .quote{
-        width:485px;
+        max-width:100%;
         height:300px;
         margin-top:70px;
         margin-right:5px;
