@@ -23,7 +23,7 @@ const search = document.getElementById("search");
     disableOnInteraction: false, 
   },
     breakpoints: {
-    450: {
+    300: {
       slidesPerView: 1,
       spaceBetween: 20,
     },

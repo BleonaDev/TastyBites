@@ -519,6 +519,10 @@ max-width: 700px;
     .quote h2{
         font-size:28px;
     }
+    .quote img{
+        max-width:260px;
+        max-height:300px;
+    }
     .about-us{
         padding:20px;
     }
